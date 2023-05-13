@@ -1,0 +1,13 @@
+.App {
+   padding: 20px;
+   justify-content: space-between;
+   text-align: center;
+   max-height: 800px;
+   height: 800px;
+   overflow-y: auto;
+   background-image:url(../img/gifs/grandes/occhi.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center center;
+}
