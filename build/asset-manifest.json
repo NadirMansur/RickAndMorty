@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3985e8a8.css",
+    "main.js": "/static/js/main.5bb03851.js",
+    "static/media/occhi.gif": "/static/media/occhi.7a1186d9456a49cc92a0.gif",
+    "index.html": "/index.html",
+    "main.3985e8a8.css.map": "/static/css/main.3985e8a8.css.map",
+    "main.5bb03851.js.map": "/static/js/main.5bb03851.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3985e8a8.css",
+    "static/js/main.5bb03851.js"
+  ]
+}
