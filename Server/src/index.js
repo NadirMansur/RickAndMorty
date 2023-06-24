@@ -3,6 +3,7 @@ const server = express();
 const PORT = 3001;
 const router = require ('./routes/index')
 const morgan = require ('morgan');
+const { conn } = require('./DB_connection');
 
 
 //se configura midelware para setear headers
@@ -26,11 +27,15 @@ server.use(express.json());
 //agregar un path por defecto al inicio de nuestrar rutas
 server.use("/rickandmorty", router) //agrega todas las rutas que creemos  modularizadas
 
-server.listen(PORT, () => {
-   console.log('Server raised in port: ' + PORT);
+// server.listen(PORT, () => {
+//    console.log('Server raised in port: ' + PORT);
+// });
+
+conn.sync({ force: true }).then(() => {
+   server.listen(PORT, () => {
+     console.log('Server raised in port: ' + PORT);
+   });
 });
-
-
 
 
 
